@@ -1,0 +1,154 @@
+:root {
+    --blue: #092B40;
+    --light_gray: #696969;
+    --gray: #3a3e43;
+    --orange: #c96700;
+    --white: #f0f0f0;
+    --off_white: #d6d6d6;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8vh;
+}
+
+body {
+    font-family: 'Nova Square', sans-serif;
+    color: var(--white);
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--orange);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+}
+
+#navbar li a {
+    font-size: 25px;
+    color: var(--white);
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    float: left;
+}
+
+li a:hover {
+    background-color: var(--light_gray);
+}
+
+h1 {
+    font-size: 55px;
+    color: var(--orange);
+}
+
+p {
+    font-size: 20px;
+}
+
+.welcomeSection {
+    height: 100vh;
+    background-image: url(Pictures/background.jpg);
+    background-size: cover;
+    background-color: black;
+}
+
+.welcomeSectionText {
+    padding-top: 45vh;
+    text-shadow: 2px 2px 3px black;
+}
+
+.aboutMeSection {
+    height: 70vh;
+    background-color: var(--blue);
+    padding: 20vh 50px 0 50px;
+}
+
+a:link, a:visited {
+    color: var(--light_gray);
+}
+
+a:hover {
+    color: var(--orange);
+}
+
+.projectsSection {
+    background-color: var(--gray);
+    padding: 1px 20px 50px 20px;
+}
+
+.projectsSectionLayout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1500px;
+}
+
+.projectsSectionLayout a {
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--off_white);
+}
+
+.projectsSectionLayout a:hover {
+    box-shadow: 0px 8px 16px 0px black;
+    transform: translateY(-5px);
+}
+
+.projectIMG {
+    width: 350px;
+}
+
+.contactSection {
+    height: 59vh;
+    background-color: var(--blue);
+    padding: 20vh 50px 0 50px;
+}
+
+.contactLinks a {
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0 15px 0 15px;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--gray);
+    padding: 1px 0 20px 0;
+}
+
+@media screen and (max-width: 580px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #navbar li a {
+        font-size: 18px;
+    }
+    
+    .projectIMG {
+        width: 300px;
+    }
+
+    .contactLinks a {
+        font-size: 20px;
+    }
+  }
